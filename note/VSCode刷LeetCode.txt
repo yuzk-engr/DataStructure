@@ -1,0 +1,4 @@
+1. 下载node.js运行环境
+2. VSCode中安装LeetCode插件
+3. 配置LeetCode插件，leetcode-cn以及node.js绝对路径
+4. 重启VSCode，登录LeetCode
