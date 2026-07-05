@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// 插入排序
 void InsertSort(int* nums, int n)
 {
 	if (nums == NULL || n == 1)
@@ -57,6 +58,30 @@ void InsertSort2(int* nums, int n)
 	}
 }
 
+// 交换排序
+void BubbleSort(int* nums, int n)
+{
+	if (nums == NULL || n <= 1)
+		return;
+
+	// n个元素 n - 1趟
+	for (int i = 0; i < n - 1; ++i)
+	{
+		int isexchange = 0;
+		for (int j = n - 1; j >= 1 + i; --j)
+		{
+			if (nums[j] < nums[j - 1])
+			{
+				int temp = nums[j];
+				nums[j] = nums[j - 1];
+				nums[j - 1] = temp;
+				isexchange = 1;
+			}
+		}
+		if (0 == isexchange)
+			return;
+	}
+}
 
 int main()
 {
@@ -67,7 +92,7 @@ int main()
 		printf("%d ", arr[i]);
 	}
 	printf("\n");
-	InsertSort2(arr, size);
+	BubbleSort(arr, size);
 	for (int i = 0; i < size; ++i)
 	{
 		printf("%d ", arr[i]);
