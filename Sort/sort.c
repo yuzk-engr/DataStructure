@@ -58,6 +58,12 @@ void InsertSort2(int* nums, int n)
 	}
 }
 
+void ShellSort(int* nums, int n)
+{
+
+}
+
+
 // 交换排序
 void BubbleSort(int* nums, int n)
 {
@@ -82,6 +88,19 @@ void BubbleSort(int* nums, int n)
 			return;
 	}
 }
+
+void QuickSort(int* nums, int begin, int end)
+{
+
+}
+
+// 选择排序
+// 简单选择排序
+// 堆排序
+
+// 归并排序
+
+// 基数排序
 
 int main()
 {
