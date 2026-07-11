@@ -150,6 +150,31 @@ public:
             }
         }
     }
+    // 查询
+    bool Find(int val) const
+    {
+        Node* p = head_->next_;
+        while (p != head_)
+        {
+            if (p->data_ == val)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // 打印链表
+    void Show() const
+    {
+        Node* p = head_->next_;
+        while (p != head_)
+        {
+            cout << p->data_ << " ";
+            p = p->next_;
+        }
+        cout << endl;
+    }
 
 private:
     struct Node
