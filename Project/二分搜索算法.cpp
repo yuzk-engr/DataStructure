@@ -51,3 +51,12 @@ int BinarySearch(int arr[], int size, int val)
     return -1;*/
 }
 
+int main()
+{
+    int arr[] = {12, 25, 34, 39, 45, 57, 63, 78, 82, 96, 100};
+    int size = sizeof arr / sizeof arr[0];
+    cout << BinarySearch(arr, size, 39) << endl;
+    cout << BinarySearch(arr, size, 45) << endl;
+    cout << BinarySearch(arr, size, 12) << endl;
+    cout << BinarySearch(arr, size, 64) << endl;
+}
