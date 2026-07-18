@@ -72,3 +72,27 @@ void QuickSort(int arr[], int size)
 	return QuickSort(arr, 0, size - 1);
 }
 
+int main()
+{
+	int arr[10];
+	srand(time(NULL));
+
+	for (int i = 0; i < 10; i++)
+	{
+		arr[i] = rand() % 100 + 1;
+	}
+
+	for (int v : arr)
+	{
+		cout << v << " ";
+	}
+	cout << endl;
+
+	QuickSort(arr, 10);
+
+	for (int v : arr)
+	{
+		cout << v << " ";
+	}
+	cout << endl;
+}
