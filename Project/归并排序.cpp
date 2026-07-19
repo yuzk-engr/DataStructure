@@ -64,3 +64,27 @@ void MergeSort(int arr[], int size)
 	delete[]p;
 }
 
+int main()
+{
+	int arr[10];
+	srand(time(NULL));
+
+	for (int i = 0; i < 10; i++)
+	{
+		arr[i] = rand() % 100 + 1;
+	}
+
+	for (int v : arr)
+	{
+		cout << v << " ";
+	}
+	cout << endl;
+
+	MergeSort(arr, 10);
+
+	for (int v : arr)
+	{
+		cout << v << " ";
+	}
+	cout << endl;
+}
