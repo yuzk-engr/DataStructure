@@ -137,3 +137,23 @@ private:
     Comp comp_; // 比较器对象
 };
 
+int main()
+{
+    // PriorityQueue que; // 基于大根堆实现的优先级队列
+
+    // 基于小根堆实现的优先级队列
+    PriorityQueue que([](int a, int b) {return a < b; });
+    srand(time(NULL));
+
+    for (int i = 0; i < 10; i++)
+    {
+        que.push(rand() % 100);
+    }
+
+    while (!que.empty())
+    {
+        cout << que.top() << " ";
+        que.pop();
+    }
+    cout << endl;
+}
