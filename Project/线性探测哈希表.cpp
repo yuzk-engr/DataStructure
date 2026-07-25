@@ -174,3 +174,17 @@ private:
 
 int HashTable::primes_[PRIME_SIZE] = { 3, 7, 23, 47, 97, 251, 443, 911, 1471, 42773 };
 
+int main()
+{
+	HashTable htable;
+	htable.insert(21);
+	htable.insert(32);
+	htable.insert(14);
+	htable.insert(15);
+
+	htable.insert(22);
+
+	cout << htable.find(21) << endl;
+	htable.erase(21);
+	cout << htable.find(21) << endl;
+}
