@@ -98,3 +98,14 @@ private:
     BloomFilter blockList_;
 };
 
+int main()
+{
+    BlackList list;
+    list.add("http://www.baidu.com");
+    list.add("http://www.360buy.com");
+    list.add("http://www.tmall.com");
+    list.add("http://www.tencent.com");
+
+    string url = "http://www.alibaba.com";
+    cout << list.query(url) << endl;
+}
