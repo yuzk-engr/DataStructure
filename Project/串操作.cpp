@@ -113,11 +113,11 @@ int KMP(string s, string t)
 	}
 }
 
-int main()
-{
-	string s = "abcabdefabcabc"; //"ABCDCABDEFG";
-	string t = "abcabc"; //"ABD";
+// int main()
+// {
+// 	string s = "abcabdefabcabc"; //"ABCDCABDEFG";
+// 	string t = "abcabc"; //"ABD";
 
-	int pos = KMP(s, t);
-	cout << pos << endl;
-}
+// 	int pos = KMP(s, t);
+// 	cout << pos << endl;
+// }
