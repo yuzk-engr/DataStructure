@@ -523,6 +523,10 @@ public:
 		int right = high(node->right_); // R
 		return left > right ? left + 1 : right + 1; // V
 	}
+
+
+
+
 	// 递归求二叉树节点个数的实现 求以node为根节点的树的节点总数，并返回
 	int number(Node* node)
 	{
