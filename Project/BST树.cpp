@@ -759,6 +759,15 @@ public:
 		mirror01(node->left_);  // L
 		mirror01(node->right_); // R
 	}
+
+
+
+
+
+
+
+
+
 	// 镜像对称
 	bool mirror02(Node* node1, Node* node2)
 	{
